@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const event_notification_1 = require("./services/event.notification");
+const Initializer_1 = require("./Initializer");
+const rest_1 = require("./api/rest");
+const business_layer_1 = require("./orchestration/business.layer");
+const chat_server_1 = require("./business/chat.server");
+let rest = new rest_1.RESTApi();
+let en = new event_notification_1.EventNotification();
+let cs = new chat_server_1.ChatServer();
+let bs = new business_layer_1.BusinessLayer(cs, en, rest);
+let server = new Initializer_1.Initializer(rest, bs);

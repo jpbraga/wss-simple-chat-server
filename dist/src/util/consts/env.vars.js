@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ENV_VARS = void 0;
+exports.ENV_VARS = {
+    LOG_LEVEL: "LOG_LEVEL",
+    JWT_IDENTIFIER: "JWT_IDENTIFIER",
+    JWT_SECRET: 'JWT_SECRET',
+    SERVER_FINDER_URL: 'SERVER_FINDER_URL',
+    EVENT_SEND_MESSAGE: 'EVENT_SEND_MESSAGE',
+    EVENT_BROADCAST: 'EVENT_BROADCAST',
+    REST_REQUEST_TIMEOUT: 'REST_REQUEST_TIMEOUT'
+};

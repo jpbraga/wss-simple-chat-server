@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:  # containers. same as docker run
+  nodejs: 
+    build:
+        context: .
+    environment:
+      JWT_SECRET: n5GySGhWlN9pWQBvmrnmJdKxmw-JTX0lKBSEYpYuOZY
+      SERVER_FINDER_URL: http://localhost/serverfinder
+      EVENT_SEND_MESSAGE: /sendMessage
+      EVENT_BROADCAST: /broadcast
+    restart: always
+    
